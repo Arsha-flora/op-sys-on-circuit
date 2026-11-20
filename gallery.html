@@ -39,7 +39,6 @@ h1 em { color:var(--green); font-style:normal; }
 .marquee:last-child {margin-bottom:0;}
 .track {display:flex;width:max-content;animation:slide-left var(--time,40s) linear infinite;will-change:transform;}
 .track.reverse {animation-name:slide-right}
-.marquee:hover .track,.marquee:focus-within .track {animation-play-state:paused;}
 .set {display:flex;flex:none;gap:13px;padding-right:13px;}
 .tile {flex:none;position:relative;overflow:hidden;width:clamp(128px,15vw,188px);height:clamp(128px,15vw,188px);border:1px solid #4961456b;border-radius:16px;background:radial-gradient(ellipse at 54% 85%,#3d5835 0%,#1a2b1d 52%,#101b13 100%);}
 .tile img {height:100%;width:100%;object-fit:contain;display:block;filter:drop-shadow(0 8px 8px #0007);padding:8px;}
@@ -48,10 +47,8 @@ h1 em { color:var(--green); font-style:normal; }
 .tile:hover{border-color:#b7eb70;}
 @keyframes slide-left {from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes slide-right {from{transform:translateX(-50%)}to{transform:translateX(0)}}
-.status {margin:16px clamp(17px,4vw,58px) 0;color:#a4b6a0;font-size:12px;}
-.status.error {color:#ffbd9c;}
-.footer {display:flex;gap:12px;justify-content:space-between;align-items:center;margin:22px clamp(17px,4vw,58px) 0;flex-wrap:wrap;font-size:11px;color:#839c81;}
-.footer strong{color:var(--green)}
+.status {display:none;margin:16px clamp(17px,4vw,58px) 0;color:#a4b6a0;font-size:12px;}
+.status.error {display:block;color:#ffbd9c;}
 .skeleton{width:clamp(128px,15vw,188px);height:clamp(128px,15vw,188px);border-radius:16px;background:linear-gradient(90deg,#152219,#293f2b,#152219);background-size:200% 100%;animation:shimmer 1.5s ease-in-out infinite;flex:none;}
 @keyframes shimmer{to{background-position:-200% 0}}
 button:focus-visible,a:focus-visible{outline:2px solid var(--green);outline-offset:3px;}
@@ -74,9 +71,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--green);outline-offs
     <div class="panel-head"><span class="choice" id="active-category">LOADING LIBRARY</span><span class="live"><i></i>DUAL-ROW SHOWCASE</span></div>
     <div class="marquee"><div id="track-one" class="track" style="--time:38s"><div class="set"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div></div></div>
     <div class="marquee"><div id="track-two" class="track reverse" style="--time:38s"><div class="set"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div></div></div>
-    <div id="gallery-status" class="status" role="status">Reading image folders…</div>
+    <div id="gallery-status" class="status" role="status"></div>
   </div>
-  <div class="footer"><span><strong>GROUND COVER KIT</strong> / ASSET LIBRARY</span><span>Hover a row to pause · Images are sorted naturally by filename</span></div>
 </section>
 <script>
 (()=>{
@@ -139,7 +135,6 @@ function init(categories){
   [...tabs.children].forEach((t,k)=>t.setAttribute('aria-selected',String(i===k)));
   const a=c.images.filter((_,k)=>k%2===0), b=c.images.filter((_,k)=>k%2!==0);
   draw(tracks[0],a.length?a:c.images);draw(tracks[1],b.length?b:c.images);
-  status.textContent=`${c.images.length} images in ${c.name} · select another folder above`;
  };
  show.forEach((c,i)=>{const button=document.createElement('button');button.type='button';button.className='tab';button.setAttribute('role','tab');button.setAttribute('aria-controls','gallery-panel');button.setAttribute('aria-selected',String(i===0));button.append(document.createTextNode(caption(c.name)+' '));const count=document.createElement('span');count.className='count';count.textContent=c.images.length;button.append(count);button.addEventListener('click',()=>switchCategory(i));tabs.append(button)});
  switchCategory(0);
