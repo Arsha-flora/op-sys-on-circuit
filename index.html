@@ -1,120 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a0f0b">
-  <meta name="description" content="Ground Cover Kit for Blender: 253 vegetation and ground-cover models, seven soil materials, and the Surface Pencil scatter add-on.">
-  <meta property="og:title" content="Ground Cover Kit — Surface Pencil + 260 Assets">
-  <meta property="og:description" content="Build rich natural environments with 253 ground-cover models, seven soil materials and the Surface Pencil scatter add-on.">
-  <title>Ground Cover Kit | Surface Pencil + 260 Assets</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a100c" />
+  <meta name="description" content="Ground Cover Kit by Arsha Flora — 253 ground-cover mesh assets, 7 soil materials, and the Surface Pencil scatter add-on for Blender." />
+  <title>Ground Cover Kit | Create Natural Worlds in Blender</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0a100c;--surface:#121c14;--surface2:#19271b;--green:#c9fa7b;--line:#344b35;--text:#f5f7ed;--muted:#a6baa3;--max:1200px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--text);background:radial-gradient(ellipse 110% 35% at 80% -7%,#31542e5c,transparent 73%),var(--bg);overflow-x:hidden}button{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--green);outline-offset:4px}a{color:inherit;text-decoration:none}h1,h2,p{margin-top:0}
+    .section{max-width:var(--max);margin:0 auto;padding:64px clamp(18px,5vw,68px)}
+    .eyebrow{display:flex;align-items:center;gap:11px;color:var(--green);font-size:11px;letter-spacing:.19em;font-weight:800;text-transform:uppercase}.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 13px #c9fa7b9c}
+    h1,h2{font-weight:850;line-height:1.05;letter-spacing:-.067em}h1{font-size:clamp(52px,7.8vw,104px);margin:27px 0}h2{font-size:clamp(35px,5.3vw,69px);margin:18px 0 18px}h1 em,h2 em{font-style:normal;color:var(--green)}
+    .hero{padding-top:110px;padding-bottom:95px;position:relative;min-height:635px}.hero:after{content:"";position:absolute;right:1%;top:5%;width:min(45vw,520px);height:470px;z-index:-1;background:radial-gradient(ellipse,#779c4345,transparent 70%);filter:blur(14px)}
+    .hero-inner{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}.hero h1{max-width:850px}.hero-copy{max-width:675px;font-size:17px;line-height:1.95;color:#b9c9b4;margin-bottom:30px}.hero-copy strong{color:#f5f8ec}
+    .hero-actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap}.primary{display:inline-flex;align-items:center;gap:30px;padding:14px 21px;background:var(--green);color:#16210e;border-radius:11px;font-size:13px;font-weight:850;transition:transform .2s}.primary:hover{transform:translateY(-3px)}.fine-print{font-size:11px;color:#789175;letter-spacing:.09em}
+    .hero-counter{border:1px solid #63844880;background:linear-gradient(155deg,#223827df,#111c14eb);border-radius:25px;padding:32px;box-shadow:0 25px 90px #0008;max-width:390px;justify-self:end;width:100%}.counter-mark{font-size:12px;color:var(--green);letter-spacing:.14em;text-transform:uppercase;font-weight:800}.counter-big{font-size:clamp(78px,11vw,148px);font-weight:900;line-height:1.12;letter-spacing:-.09em}.counter-sub{font-size:12px;color:#bbcdb4;font-weight:700}.counter-divider{height:1px;background:#6080525e;margin:24px 0}.counter-row{display:flex;justify-content:space-between;gap:20px;align-items:baseline;font-size:13px;color:#bed0b8;margin-top:10px}.counter-row strong{font-size:18px;color:#e7f4d6}
+    .intro-rule{height:1px;border:0;background:linear-gradient(90deg,transparent,#55774880,transparent);max-width:var(--max);margin:0 auto}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:27px}.section-head>div{max-width:780px}.section-head>p{max-width:330px;color:var(--muted);font-size:14px;line-height:1.85;margin:0 0 4px}.gallery{padding-top:85px;padding-bottom:95px}.gallery .section-head{margin-bottom:30px}
+    .tabs{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}.tab{border:1px solid #496448;background:linear-gradient(135deg,#1c2b1e,#141e16);border-radius:100px;color:#d1dfcb;display:flex;align-items:center;gap:9px;padding:11px 17px;font-weight:750;font-size:12px;cursor:pointer;transition:background .25s,border-color .25s,color .25s,transform .25s}.tab:hover{border-color:var(--green);color:#f0ffd6;transform:translateY(-1px)}.tab[aria-selected=true]{background:var(--green);color:#18240f;border-color:var(--green);box-shadow:0 5px 18px #c9fa7b22}.tab .count{background:#ffffff17;border-radius:20px;padding:1px 8px;font-size:10px}.tab[aria-selected=true] .count{background:#253a142b}
+    .gallery-panel{border-top:1px solid #314333;border-bottom:1px solid #314333;padding:21px 0 27px;background:linear-gradient(180deg,#1522187d,transparent 95%);position:relative;margin:0 calc(-1 * clamp(18px,5vw,68px))}.gallery-panel:before,.gallery-panel:after{content:"";position:absolute;top:0;bottom:0;width:min(8%,80px);pointer-events:none;z-index:3}.gallery-panel:before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}.gallery-panel:after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}.panel-head{display:flex;justify-content:flex-start;align-items:center;margin:0 clamp(18px,5vw,68px) 17px;font-size:11px;font-weight:800;letter-spacing:.13em;color:#d9edd0}.panel-head .choice{color:var(--green)}
+    .marquee{width:100%;overflow:hidden;display:flex;user-select:none;margin-bottom:14px}.marquee:last-of-type{margin-bottom:0}.track{display:flex;width:max-content;animation:slide-left var(--time,24s) linear infinite;will-change:transform}.track.reverse{animation-name:slide-right}.set{display:flex;flex:none;gap:13px;padding-right:13px}.tile{flex:none;position:relative;overflow:hidden;width:clamp(130px,15vw,186px);height:clamp(130px,15vw,186px);border:1px solid #4961456b;border-radius:16px;background:radial-gradient(ellipse at 54% 85%,#3d5835 0%,#1a2b1d 52%,#101b13 100%)}.tile img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(0 8px 8px #0007);padding:8px}.tile:hover{border-color:#b7eb70}.tile:after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 30px #0003;pointer-events:none}
+    @keyframes slide-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}@keyframes slide-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+    .status{display:none;margin:16px clamp(18px,5vw,68px) 0;color:#a4b6a0;font-size:12px}.status.error{display:block;color:#ffbd9c}.skeleton{width:clamp(130px,15vw,186px);height:clamp(130px,15vw,186px);border-radius:16px;background:linear-gradient(90deg,#152219,#293f2b,#152219);background-size:200% 100%;animation:shimmer 1.5s ease-in-out infinite;flex:none}@keyframes shimmer{to{background-position:-200% 0}}
+    .reveal-section{padding-top:92px;padding-bottom:90px}.scene-list{display:grid;gap:50px}.scene-block{border:1px solid #3d593b;border-radius:22px;background:linear-gradient(155deg,#172719,#0b110c);overflow:hidden;box-shadow:0 28px 76px #0006}.scene-caption{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:19px clamp(15px,3vw,28px);border-bottom:1px solid #304b36;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#bad1af}.scene-caption .scene-num{color:var(--green)}.scene-caption .progress-label{color:#c9fa7b}.scene-image{position:relative;aspect-ratio:16/9;background:#101c14;overflow:hidden;isolation:isolate}.scene-image img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.scene-image .next-shot{clip-path:inset(0 100% 0 0);will-change:clip-path;z-index:2}.scene-image .wipe-line{position:absolute;left:0;top:0;bottom:0;width:3px;background:#d5ff9a;box-shadow:0 0 14px 4px #c9fa7b99,0 0 36px 8px #aef66b4a;opacity:0;z-index:3;pointer-events:none;transform:translateX(-5px);will-change:left}.scene-image.is-wiping .next-shot{transition:clip-path 1.05s cubic-bezier(.5,0,.5,1);clip-path:inset(0 0 0 0)}.scene-image.is-wiping .wipe-line{opacity:1;left:100%;transition:left 1.05s cubic-bezier(.5,0,.5,1)}.scene-image .scene-shine{position:absolute;inset:0;z-index:4;pointer-events:none;box-shadow:inset 0 0 75px #050a0780}.scene-image .scene-loading{position:absolute;inset:0;display:grid;place-items:center;z-index:1;font-size:13px;color:#acbea4;letter-spacing:.04em}.scene-image.loaded .scene-loading{display:none}.scene-footer{display:flex;gap:7px;justify-content:center;padding:16px;border-top:1px solid #2c432e}.scene-footer .step-dot{width:24px;height:3px;border-radius:9px;background:#40513a;transition:background .3s,width .3s}.scene-footer .step-dot.active{width:43px;background:var(--green)}
+    .last-banner{padding:50px clamp(20px,5vw,60px) 70px;text-align:center;border-top:1px solid #2e412f}.last-banner strong{color:var(--green);letter-spacing:.15em;font-size:10px;text-transform:uppercase}.last-banner h2{font-size:clamp(34px,5vw,58px);margin:14px auto 17px}.last-banner p{color:var(--muted);max-width:650px;margin:0 auto;line-height:1.8}
+    .data-error{border:1px dashed #5c6d55;border-radius:12px;padding:22px;color:#b5c8ae;font-size:13px}.data-error code{color:var(--green)}
+    @media(max-width:800px){.hero-inner{grid-template-columns:1fr;gap:24px}.hero-counter{justify-self:start;max-width:520px}.hero{padding-top:65px;padding-bottom:55px;min-height:0}.hero-counter .counter-big{font-size:95px}.section-head{display:block}.section-head>p{margin-top:19px;max-width:650px}.section{padding-top:52px;padding-bottom:48px}.scene-list{gap:26px}}
+    @media(max-width:540px){h1{font-size:clamp(45px,12vw,66px)}h2{font-size:38px}.hero-copy{font-size:15px}.hero-counter{padding:22px}.counter-big{font-size:80px!important}.gallery-panel{padding-top:17px;padding-bottom:18px}.tab{font-size:11px;padding:9px 12px}.tile,.skeleton{width:126px;height:126px;border-radius:13px}.set{gap:9px;padding-right:9px}.marquee{margin-bottom:10px}.scene-caption{font-size:9px}.scene-footer .step-dot{width:14px}.scene-footer .step-dot.active{width:27px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.track{animation:none!important}.marquee{overflow:auto;scrollbar-width:thin}.track .set:last-child{display:none}.skeleton{animation:none}.scene-image.is-wiping .next-shot,.scene-image.is-wiping .wipe-line{transition:none!important}}
+  </style>
 </head>
 <body>
-  <div class="site-frame"></div>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Ground Cover Kit, top"><span class="brand-mark"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 21 18 4l2 2L7 22l-4-1 1-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m15 7 3 3M7 16l3 3" stroke="currentColor" stroke-width="1.3"/></svg></span><span>GROUND <strong>COVER KIT</strong><small>by Arsha Flora</small></span></a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#library">Asset library</a><a href="#workflows">Scatter tools</a><a href="#optimization">Face Camera</a><a href="#languages">8 languages</a>
-    </nav>
-    <a class="nav-cta" href="#get-kit">Explore the kit <span aria-hidden="true">↗</span></a>
-  </header>
-  <main id="top">
-    <section id="hero" class="hero page-section">
-      <div class="hero-aura" aria-hidden="true"></div>
-      <div class="hero-content">
-        <div class="eyebrow"><span class="live-dot"></span> THE COMPLETE GROUND-COVER WORKFLOW <span class="eyebrow-line"></span> BLENDER 4.2+</div>
-        <h1>From empty ground<br>to <em>living worlds.</em></h1>
-        <p class="intro">One ready-to-use ground-cover library. One intuitive scatter add-on. Give your environments the organic detail they deserve without placing every object by hand.</p>
-        <div class="hero-buttons"><a class="btn btn-green" href="#library">Discover the assets <span>↘</span></a><a class="btn btn-outline" href="#demo">Try interactive preview <span>↗</span></a></div>
-        <div class="hero-stats" aria-label="Kit contents"><div><strong>253</strong><span>3D MODELS</span></div><div><strong>07</strong><span>SOIL MATERIALS</span></div><div><strong>08</strong><span>UI LANGUAGES</span></div></div>
+<main>
+  <section id="top" class="section hero" aria-labelledby="site-title">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> ARSHA FLORA / COMPLETE ENVIRONMENT TOOLKIT</div>
+        <h1 id="site-title">Ground Cover <em>Kit.</em></h1>
+        <p class="hero-copy">Create richer, more believable outdoor scenes with an extensive library of <strong>253 ground-cover models</strong> and <strong>7 soil materials</strong> — together with <strong>Surface Pencil</strong>, a Blender add-on designed to let you draw where your assets should scatter.</p>
+        <div class="hero-actions"><a class="primary" href="#gallery">Explore the collection <span aria-hidden="true">↘</span></a><span class="fine-print">AREA · PATH · BRUSH · WHOLE MESH · FACE CAMERA · 8 LANGUAGES · BLENDER 4.2+</span></div>
       </div>
-      <div class="hero-visual" aria-label="Illustrated visualization of ground cover and scatter">
-        <div class="scene-top"><span class="scene-led"></span><span>ENVIRONMENT / GROUNDCOVER</span><span class="scene-top-right">DESIGN PREVIEW ◇</span></div>
-        <svg class="terrain-svg" viewBox="0 0 760 660" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#172821"/><stop offset=".55" stop-color="#1c3228"/><stop offset="1" stop-color="#141d16"/></linearGradient>
-            <radialGradient id="earth"><stop stop-color="#54603e"/><stop offset=".6" stop-color="#35412c"/><stop offset="1" stop-color="#1a231b"/></radialGradient>
-            <linearGradient id="hill" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#58713d"/><stop offset="1" stop-color="#1f3423"/></linearGradient>
-            <filter id="bgblur"><feGaussianBlur stdDeviation="14"/></filter>
-          </defs>
-          <rect width="760" height="660" fill="url(#sky)"/>
-          <g opacity=".45" filter="url(#bgblur)"><ellipse cx="70" cy="150" rx="120" ry="180" fill="#56875f"/><ellipse cx="700" cy="130" rx="220" ry="220" fill="#406b47"/><circle cx="470" cy="92" r="80" fill="#91a45b"/></g>
-          <path d="M-20 335Q200 255 395 310T800 245L800 670H0Z" fill="url(#hill)"/>
-          <path d="M-30 475Q215 355 400 440T790 402L810 720H-20Z" fill="url(#earth)"/>
-          <g stroke="#91b36f" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".9">
-            <path d="M78 548q-17-56-42-78m42 78q-9-69 7-103m-7 103q24-85 44-101m-44 101q12-50 49-56M200 502q-6-86-31-115m31 115q17-68 49-98m-49 98q6-57-5-110M356 488q-27-75-55-100m55 100q-7-99 12-121m-12 121q20-84 58-107m-58 107q-13-57-48-58M574 528q-9-95-32-110m32 110q21-93 39-102m-39 102q-24-60-62-67m62 67q31-47 49-48M673 436q-9-62-27-87m27 87q10-75 24-93m-24 93q-12-52-49-55m49 55q24-57 49-64"/>
-          </g>
-          <g stroke="#c4aa73" stroke-width="1.8" fill="none" opacity=".9">
-            <path d="M120 420v-94m0 44-17-13m17-18 20-21m-20 62 23 12M428 444v-108m0 39 19-18m-19 41-18-12m18-35-17-21M625 481v-112m0 35 21-20m-21 36-26-20"/>
-          </g>
-          <g fill="#d5cba1"><ellipse cx="120" cy="325" rx="15" ry="4"/><ellipse cx="140" cy="319" rx="12" ry="3"/><ellipse cx="427" cy="337" rx="14" ry="4"/><ellipse cx="625" cy="370" rx="14" ry="4"/></g>
-          <g fill="#b0a48d"><path d="m9 560 75-22 44 12 15 43-87 19-49-13Z"/><path d="m593 560 74-43 72 27 15 43-67 18-74-8Z"/></g>
-          <g fill="#f0e5ae"><circle cx="270" cy="463" r="6"/><circle cx="478" cy="481" r="6"/><circle cx="520" cy="430" r="5"/><circle cx="176" cy="560" r="6"/></g>
-          <g fill="#d3aa37"><circle cx="270" cy="463" r="2.5"/><circle cx="478" cy="481" r="2.5"/><circle cx="520" cy="430" r="2"/><circle cx="176" cy="560" r="2.5"/></g>
-          <g fill="#60482f" stroke="#9f8260" stroke-width="4" stroke-linecap="round"><path d="m410 580 116-52 29-37m-55 50 24 24m-53-5-9-29"/><path d="M190 632 291 597l36-31m-51 39 12 32"/></g>
-          <g fill="#d9bc75" opacity=".7"><path d="m385 615 14-23 9 18-8 16Z"/><path d="m535 601 24-8-11 22Z"/><path d="m320 540 20-12-4 23Z"/></g>
-          <rect x="0" y="0" width="760" height="660" fill="url(#sky)" opacity=".04"/>
-        </svg>
-        <div class="hero-hover-card"><span>↗</span><strong>253 models</strong><small>Grass · flowers · shrubs · rocks · debris</small></div>
-        <div class="hero-bottom"><span><span class="spark"></span> GROUND COVER KIT</span><span>01 / INFINITE COMBINATIONS</span></div>
-      </div>
-    </section>
+      <aside class="hero-counter" aria-label="What's included">
+        <div class="counter-mark">ALL IN ONE KIT</div><div class="counter-big">260</div><div class="counter-sub">TOTAL INCLUDED ASSETS</div>
+        <div class="counter-divider"></div><div class="counter-row"><span>Ground-cover mesh models</span><strong>253</strong></div><div class="counter-row"><span>Soil material variations</span><strong>07</strong></div><div class="counter-row"><span>Surface Pencil scatter add-on</span><strong>✓</strong></div>
+      </aside>
+    </div>
+  </section>
+  <hr class="intro-rule" />
+  <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
+    <div class="section-head"><div><div class="eyebrow"><span class="dot"></span> 01 / EXPLORE THE LIBRARY</div><h2 id="gallery-title">Every detail.<br><em>One complete kit.</em></h2></div><p>Browse the included ground-cover models. Choose a category to see its asset previews in two continuous, opposite-direction image streams.</p></div>
+    <div id="category-tabs" class="tabs" role="tablist" aria-label="Asset categories"></div>
+    <div id="gallery-panel" class="gallery-panel" role="tabpanel" aria-live="off">
+      <div class="panel-head"><span class="choice" id="active-category">LOADING LIBRARY</span></div>
+      <div class="marquee"><div id="track-one" class="track" style="--time:24s"><div class="set"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div></div></div>
+      <div class="marquee"><div id="track-two" class="track reverse" style="--time:24s"><div class="set"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div></div></div>
+      <div id="gallery-status" class="status" role="status"></div>
+    </div>
+  </section>
+  <hr class="intro-rule" />
+  <section id="scene-builds" class="section reveal-section" aria-labelledby="reveal-title">
+    <div class="section-head"><div><div class="eyebrow"><span class="dot"></span> 02 / LAYER BY LAYER</div><h2 id="reveal-title">Watch the ground<br><em>come to life.</em></h2></div><p>From an empty surface to a finished environment. Each passing light sweep reveals the next stage of the scene.</p></div>
+    <div id="scene-list" class="scene-list"><div class="data-error" id="render-loading">Loading scene renders…</div></div>
+  </section>
+  <footer class="last-banner"><strong>GROUND COVER KIT BY ARSHA FLORA</strong><h2>Build nature, <em>your way.</em></h2><p>Made for artists creating landscapes, natural environments, detailed ground cover and atmospheric outdoor scenes with Blender.</p></footer>
+</main>
+<script>
+(()=>{
+  'use strict';
+  const OWNER='Arsha-flora', REPO='op-sys-on-circuit', BRANCH='main';
+  const CATEGORIES_ROOT='assets/categories/';
+  const RENDERS_ROOT='assets/';
+  const IMAGE_TYPES=/\.(webp|png|jpe?g|avif|gif)$/i;
+  const natural=new Intl.Collator('en',{numeric:true,sensitivity:'base'});
+  const assetURL=p=>'./'+p.split('/').map(encodeURIComponent).join('/');
+  const isRefresh=new URLSearchParams(location.search).has('refresh');
+  const CACHE_NAME='gck_tree_v3'; const CACHE_MS=15*60*1000;
 
-    <section id="library" class="library page-section section-space">
-      <div class="section-heading"><div><span class="micro-label">01 / THE ASSET COLLECTION</span><h2>A world of detail.<br><em>Ready when you are.</em></h2></div><p>From soft grass tufts and flowering plants to dry brush, stones and fallen debris—build richer ground surfaces with 253 mesh assets and seven soil materials.</p></div>
-      <div class="asset-highlight"><span class="asset-highlight-icon">✳</span><div><strong>260 included assets</strong><small>253 individual mesh assets + 7 soil materials</small></div><a href="#catalog" class="text-link">Browse every category <span>↗</span></a></div>
-      <div class="filter-row" role="group" aria-label="Filter library categories"><button class="filter-chip selected" data-filter="all" aria-pressed="true">All assets <span>10</span></button><button class="filter-chip" data-filter="plants" aria-pressed="false">Living plants</button><button class="filter-chip" data-filter="dry" aria-pressed="false">Dry & debris</button><button class="filter-chip" data-filter="ground" aria-pressed="false">Ground elements</button></div>
-      <div id="catalog" class="asset-grid">
-        <article class="asset-card" data-type="plants"><div class="asset-art art-grass"><span class="asset-emoji" aria-hidden="true">🌱</span><small>01 / GREENERY</small></div><div class="asset-meta"><strong>Grass</strong><span>78 variants</span></div></article>
-        <article class="asset-card" data-type="plants"><div class="asset-art art-flower"><span class="asset-emoji" aria-hidden="true">🌼</span><small>02 / BLOOMS</small></div><div class="asset-meta"><strong>Flowering shrubs</strong><span>64 variants</span></div></article>
-        <article class="asset-card" data-type="plants"><div class="asset-art art-pampas"><span class="asset-emoji" aria-hidden="true">🌾</span><small>03 / ORNAMENTAL</small></div><div class="asset-meta"><strong>Pampas grass</strong><span>20 variants</span></div></article>
-        <article class="asset-card" data-type="plants"><div class="asset-art art-bush"><span class="asset-emoji" aria-hidden="true">🌿</span><small>04 / GREENERY</small></div><div class="asset-meta"><strong>Bush</strong><span>10 variants</span></div></article>
-        <article class="asset-card" data-type="plants"><div class="asset-art art-large"><span class="asset-emoji" aria-hidden="true">🌳</span><small>05 / GREENERY</small></div><div class="asset-meta"><strong>Large bush</strong><span>12 variants</span></div></article>
-        <article class="asset-card" data-type="plants"><div class="asset-art art-dandelion"><span class="asset-emoji" aria-hidden="true">🌻</span><small>06 / WILD PLANTS</small></div><div class="asset-meta"><strong>Dandelion plants</strong><span>11 variants</span></div></article>
-        <article class="asset-card" data-type="dry"><div class="asset-art art-dry"><span class="asset-emoji" aria-hidden="true">🍂</span><small>07 / DRY COVER</small></div><div class="asset-meta"><strong>Dry bush</strong><span>23 variants</span></div></article>
-        <article class="asset-card" data-type="dry"><div class="asset-art art-wood"><span class="asset-emoji" aria-hidden="true">🪵</span><small>08 / DEBRIS</small></div><div class="asset-meta"><strong>Dry wood</strong><span>19 variants</span></div></article>
-        <article class="asset-card" data-type="dry"><div class="asset-art art-leaf"><span class="asset-emoji" aria-hidden="true">🍁</span><small>09 / DEBRIS</small></div><div class="asset-meta"><strong>Dry leaves</strong><span>6 variants</span></div></article>
-        <article class="asset-card" data-type="ground"><div class="asset-art art-stone"><span class="asset-emoji" aria-hidden="true">🪨</span><small>10 / TERRAIN</small></div><div class="asset-meta"><strong>Stones</strong><span>10 variants</span></div></article>
-      </div>
-      <div class="soil-panel"><div><span class="micro-label">PLUS / SURFACE MATERIALS</span><h3>7 soil materials.<br><em>One cohesive ground.</em></h3><p>Mix vegetation, stones and debris with the included soil material variations.</p></div><div class="soil-swatches" aria-label="Seven stylized soil color samples"><span style="--soil:#674c35"></span><span style="--soil:#88715b"></span><span style="--soil:#a4845c"></span><span style="--soil:#7c7a6d"></span><span style="--soil:#645846"></span><span style="--soil:#3e4f35"></span><span style="--soil:#807f63"></span></div></div>
-      <p class="visual-note">Category artwork above is illustrative. Replace with real product renders or Asset Browser screenshots for the final sales page; counts are taken from the supplied asset inventory.</p>
-    </section>
+  const logError=e=>console.warn('[Ground Cover Kit]',e);
+  async function getRepoTree(){
+    if(!isRefresh){try{const stored=JSON.parse(localStorage.getItem(CACHE_NAME));if(stored&&Date.now()-stored.saved<CACHE_MS&&stored.tree?.length)return stored.tree;}catch{}}
+    const url='https://api.github.com/repos/'+OWNER+'/'+REPO+'/git/trees/'+BRANCH+'?recursive=1';
+    const response=await fetch(url,{headers:{Accept:'application/vnd.github+json'},cache:'no-cache'});
+    if(!response.ok)throw new Error(response.status===403?'GitHub API rate limit reached. Please reload shortly.':'GitHub returned '+response.status);
+    const json=await response.json();if(json.truncated)throw new Error('The repository file list is incomplete.');
+    const entries=(json.tree||[]).filter(f=>f.type==='blob'&&IMAGE_TYPES.test(f.path)).map(f=>f.path);
+    try{localStorage.setItem(CACHE_NAME,JSON.stringify({saved:Date.now(),tree:entries}));}catch{}
+    return entries;
+  }
+  function collectCategories(paths){
+    const found=new Map();
+    for(const path of paths){if(!path.startsWith(CATEGORIES_ROOT))continue;
+      const tail=path.slice(CATEGORIES_ROOT.length);const slash=tail.indexOf('/');if(slash<1||tail.slice(slash+1).includes('/'))continue;
+      const folder=tail.slice(0,slash);if(!found.has(folder))found.set(folder,[]);found.get(folder).push(path);
+    }
+    return [...found].sort((a,b)=>natural.compare(a[0],b[0])).map(([name,images])=>({name,images:images.sort((a,b)=>natural.compare(a.split('/').pop(),b.split('/').pop()))}));
+  }
+  function collectScenes(paths){
+    const groups=new Map();
+    for(const path of paths){
+      if(!path.startsWith(RENDERS_ROOT))continue;
+      const tail=path.slice(RENDERS_ROOT.length);const slash=tail.indexOf('/');if(slash<1||tail.slice(slash+1).includes('/'))continue;
+      const folder=tail.slice(0,slash);
+      if(!/^render\d+$/i.test(folder))continue;
+      if(!groups.has(folder))groups.set(folder,[]);groups.get(folder).push(path);
+    }
+    return [...groups].sort((a,b)=>natural.compare(a[0],b[0])).map(([folder,images])=>({folder,images:images.sort((a,b)=>natural.compare(a.split('/').pop(),b.split('/').pop()))}));
+  }
 
-    <section id="workflows" class="workflow page-section section-space">
-      <div class="section-heading"><div><span class="micro-label">02 / MEET SURFACE PENCIL</span><h2>You choose where.<br><em>Surface Pencil handles placement.</em></h2></div><p>The included Surface Pencil add-on lets you define scatter coverage directly on your Blender surfaces and refine the result after creating it.</p></div>
-      <div class="feature-pills"><span>4 coverage tools</span><span>Multiple source meshes</span><span>Editable scatter layers</span><span>Live parameter adjustments</span></div>
-      <div id="demo" class="demo-shell">
-        <div class="demo-head"><span class="demo-logo">✎</span><div><strong>Surface Pencil / Interactive concept</strong><small>Illustrated interface demo — not a Blender viewport recording</small></div><span class="demo-status"><i></i> LIVE PREVIEW</span></div>
-        <div class="demo-content">
-          <div class="demo-tools"><div class="demo-tools-title">COVERAGE MODE</div>
-            <button class="tool-btn active" data-tool="area" aria-pressed="true"><span class="tool-ico">▧</span><span><strong>Area</strong><small>Draw a closed region</small></span></button>
-            <button class="tool-btn" data-tool="path" aria-pressed="false"><span class="tool-ico">⌁</span><span><strong>Path</strong><small>Follow a line</small></span></button>
-            <button class="tool-btn" data-tool="brush" aria-pressed="false"><span class="tool-ico">✎</span><span><strong>Brush</strong><small>Paint the surface</small></span></button>
-            <button class="tool-btn" data-tool="whole" aria-pressed="false"><span class="tool-ico">⤢</span><span><strong>Whole Mesh</strong><small>Cover everything</small></span></button>
-          </div>
-          <div class="demo-viewport">
-            <div class="viewport-top"><span>USER PERSPECTIVE</span><span>X 12.4&nbsp;&nbsp; Y -2.1&nbsp;&nbsp; Z 4.6</span></div>
-            <svg id="scatter-stage" viewBox="0 0 700 430" role="img" aria-label="Interactive illustrative scatter distribution preview"><defs><pattern id="terrain-grid" width="33" height="33" patternUnits="userSpaceOnUse"><path d="M33 0H0V33" fill="none" stroke="#61765b" stroke-opacity=".14"/></pattern><linearGradient id="surface-paint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#364934"/><stop offset="1" stop-color="#1a281f"/></linearGradient></defs><rect width="700" height="430" fill="#101a14"/><path d="M28 110 615 80 694 376 88 409Z" fill="url(#surface-paint)" stroke="#68816b" stroke-opacity=".42"/><path d="M28 110 615 80 694 376 88 409Z" fill="url(#terrain-grid)"/><g id="scatter-coverage"></g><g id="scatter-instances"></g><g id="scatter-brush"></g></svg>
-            <div class="viewport-bottom"><span id="mode-hint">AREA · draw a closed region</span><span><span id="instance-count">0</span> illustrated instances</span></div>
-          </div>
-          <div class="demo-control-panel"><span class="demo-tools-title">DISTRIBUTION</span><label for="density">Density <strong id="density-value">58%</strong></label><input id="density" type="range" min="15" max="100" value="58"/><label for="asset-mix">Source mix</label><select id="asset-mix"><option value="mixed">Mixed ground cover</option><option value="grass">Grass & greenery</option><option value="flowers">Flowers & grass</option><option value="stones">Stones & debris</option></select><button id="rebuild" class="secondary-action">↻ &nbsp;Rebuild scatter</button><div class="control-note"><span>ⓘ</span> Adjust the controls to explore an illustrative scatter concept.</div></div>
-        </div>
-      </div>
-      <div class="workflow-grid"><article><span class="workflow-step">01</span><strong>Pick a surface</strong><p>Choose the mesh that should receive your instances.</p></article><article><span class="workflow-step">02</span><strong>Choose your sources</strong><p>Add one or more source meshes and control their individual amounts.</p></article><article><span class="workflow-step">03</span><strong>Draw your coverage</strong><p>Use Area, Path, Brush or Whole Mesh to decide where instances appear.</p></article><article><span class="workflow-step">04</span><strong>Refine any time</strong><p>Adjust distribution, transforms and layers without restarting your layout.</p></article></div>
-    </section>
+  // Two opposing, continuously animated picture trains.
+  const tabs=document.getElementById('category-tabs');const title=document.getElementById('active-category');const status=document.getElementById('gallery-status');
+  const tracks=[document.getElementById('track-one'),document.getElementById('track-two')];
+  function makeTile(path,index){const el=document.createElement('div');el.className='tile';const image=document.createElement('img');image.src=assetURL(path);image.alt=path.split('/').pop().replace(/\.[^.]+$/,'');image.decoding='async';image.loading=index<7?'eager':'lazy';image.onerror=()=>{el.style.opacity='.3';image.alt='Image unavailable';};el.append(image);return el;}
+  function drawTrack(track,images){track.replaceChildren();if(!images.length)return;
+    const tilesCount=Math.max(9,images.length);const imagesLooped=Array.from({length:tilesCount},(_,i)=>images[i%images.length]);
+    const set=document.createElement('div');set.className='set';imagesLooped.forEach((path,i)=>set.append(makeTile(path,i)));
+    const clone=set.cloneNode(true);clone.setAttribute('aria-hidden','true');track.append(set,clone);
+    const tileSize=innerWidth<540?126:Math.min(186,Math.max(130,innerWidth*.15));
+    // 1.5x faster than the original track calculation.
+    const oldSeconds=Math.max(26,tilesCount*(tileSize+13)/34);
+    track.style.setProperty('--time',(oldSeconds/1.5).toFixed(2)+'s');
+  }
+  function showCategories(categories){
+    if(!categories.length){title.textContent='NO CATEGORIES FOUND';status.classList.add('error');status.textContent='No WebP images found under assets/categories/. The folder names become the category buttons.';tracks.forEach(x=>x.replaceChildren());return;}
+    const selected=categories.slice(0,6); const activate=i=>{const c=selected[i];title.textContent=c.name.toUpperCase();[...tabs.children].forEach((b,j)=>b.setAttribute('aria-selected',String(i===j)));
+      const odd=c.images.filter((_,k)=>k%2===0),even=c.images.filter((_,k)=>k%2===1);
+      drawTrack(tracks[0],odd.length?odd:c.images);drawTrack(tracks[1],even.length?even:c.images);
+    };
+    selected.forEach((c,i)=>{const b=document.createElement('button');b.className='tab';b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-controls','gallery-panel');b.setAttribute('aria-selected',String(i===0));b.append(document.createTextNode(c.name+' '));const count=document.createElement('span');count.className='count';count.textContent=c.images.length;b.append(count);b.onclick=()=>activate(i);tabs.append(b);});
+    activate(0);
+  }
 
-    <section id="optimization" class="optimization page-section section-space"><div class="optimization-copy"><span class="micro-label">03 / PERFORMANCE-FOCUSED WORKFLOW</span><h2>A smarter way<br>to <em>manage the view.</em></h2><p><strong>Face Camera</strong> is a key Surface Pencil option for helping manage complex scatter-heavy scenes. Keep your workflow camera-focused when working with dense ground cover.</p><div class="face-note">Performance depends on mesh complexity, instance counts, Blender settings and hardware; no fixed speedup or file-size reduction is guaranteed.</div></div><div class="camera-demo"><div class="camera-top"><span>◉ CAMERA WORKFLOW / ILLUSTRATION</span><span id="camera-state">PREVIEW: FULL SCENE</span></div><div class="camera-scene" id="camera-scene"><div class="camera-horizon"></div><div class="camera-guides"></div><div class="camera-elements" id="camera-elements"></div><div class="camera-focus">CAMERA VIEW</div></div><label class="toggle-control"><span><strong>Face Camera</strong><small>Illustrative camera-focused visualization</small></span><input type="checkbox" id="camera-toggle"><span class="switch" aria-hidden="true"></span></label></div></section>
-
-    <section id="languages" class="languages page-section section-space"><div class="languages-title"><span class="micro-label">04 / CREATE WITHOUT LANGUAGE BARRIERS</span><h2>One tool.<br><em>Eight languages.</em></h2><p>Surface Pencil translates its buttons and interface descriptions across eight supported languages.</p><div class="lang-chips" role="group" aria-label="Select interface preview language">
-        <button class="lang-btn selected" data-lang="en" aria-pressed="true">English</button><button class="lang-btn" data-lang="pt" aria-pressed="false">Português (Brasil)</button><button class="lang-btn" data-lang="de" aria-pressed="false">Deutsch</button><button class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button><button class="lang-btn" data-lang="es" aria-pressed="false">Español</button><button class="lang-btn" data-lang="fr" aria-pressed="false">Français</button><button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button><button class="lang-btn" data-lang="ru" aria-pressed="false">Русский</button>
-      </div></div><div class="lang-preview"><div class="lang-preview-bar"><span class="lang-preview-dot"></span> SURFACE PENCIL <span>UI TRANSLATION SAMPLE</span></div><div class="lang-field"><small id="translated-sources-label">Source Meshes</small><span>▦ &nbsp; grass_001, flower_003</span></div><div class="lang-field"><small id="translated-density-label">Density</small><span>▰▰▰▰▱&nbsp; 65%</span></div><div class="lang-field"><small id="translated-coverage-label">Coverage Mode</small><span>▧ &nbsp; Area</span></div><div class="lang-preview-footer" id="translated-help">Adjust distribution and rebuild your scatter.</div></div></section>
-
-    <section id="get-kit" class="cta-section page-section section-space"><div class="cta-glow"></div><span class="micro-label">EVERYTHING YOU NEED TO START</span><h2>Build more.<br><em>Place less.</em></h2><p>Ground Cover Kit bundles 253 meshes, seven soil materials and the Surface Pencil add-on in one environment-building toolkit.</p><a href="https://superhivemarket.com/creators/arsha-flora" target="_blank" rel="noopener noreferrer" class="btn btn-green">Find Arsha Flora on Superhive <span>↗</span></a><div class="cta-note">Ground Cover Kit product listing URL can be added here after publication.</div></section>
-
-    <section id="faq" class="faq page-section section-space"><div><span class="micro-label">GOOD TO KNOW</span><h2>Questions, <em>answered.</em></h2></div><div class="faq-items"><details><summary>What is included in Ground Cover Kit?<span>＋</span></summary><p>253 mesh assets across ten ground-cover categories, seven soil materials, and the Surface Pencil add-on. The add-on and models are bundled in this product.</p></details><details><summary>Can I use my own meshes with Surface Pencil?<span>＋</span></summary><p>Yes. Surface Pencil can scatter mesh sources that you select, including your own suitable Blender mesh assets.</p></details><details><summary>Which Blender versions are supported?<span>＋</span></summary><p>Surface Pencil version 1.4.6 is designed for Blender 4.2 and later.</p></details><details><summary>Can I edit a scatter after creating it?<span>＋</span></summary><p>Yes. Re-select the scatter layer to restore its controls and edit distribution, transformations and source amounts. Separate layers can be managed independently.</p></details><details><summary>Does Face Camera guarantee faster rendering?<span>＋</span></summary><p>No fixed performance gain is guaranteed. Face Camera is intended to help manage complex, camera-focused scatter workflows; results depend on your scene and hardware.</p></details></div></section>
-  </main>
-  <footer class="site-footer"><div><strong>Ground Cover Kit</strong><span>Surface Pencil + 260 assets</span></div><p>Created by Arsha Flora · <a href="mailto:agcasyarsha@gmail.com">Contact</a></p><a href="#top">Back to top ↑</a></footer>
+  // Layer-by-layer scene builder. Every renderN folder becomes a stacked player.
+  const sceneList=document.getElementById('scene-list');
+  const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+  function loadImage(path){return new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('Could not load '+path));image.src=assetURL(path);});}
+  function makeScene(scene,i){
+    const node=document.createElement('article');node.className='scene-block';
+    const header=document.createElement('div');header.className='scene-caption';
+    const name=document.createElement('span');name.className='scene-num';name.textContent='SCENE '+String(i+1).padStart(2,'0');
+    const count=document.createElement('span');count.className='progress-label';count.textContent='STEP 01 / '+String(scene.images.length).padStart(2,'0');
+    header.append(name,count);
+    const stage=document.createElement('div');stage.className='scene-image';
+    const loading=document.createElement('div');loading.className='scene-loading';loading.textContent='LOADING SCENE';
+    const base=document.createElement('img');base.className='base-shot';base.alt='Scene build stage 1';
+    const next=document.createElement('img');next.className='next-shot';next.alt='';next.setAttribute('aria-hidden','true');
+    const line=document.createElement('div');line.className='wipe-line';
+    const shine=document.createElement('div');shine.className='scene-shine';
+    stage.append(loading,base,next,line,shine);
+    const footer=document.createElement('div');footer.className='scene-footer';footer.setAttribute('aria-label','Scene build progression');
+    const dots=scene.images.map((_,k)=>{const d=document.createElement('span');d.className='step-dot';d.classList.toggle('active',k===0);footer.append(d);return d;});
+    node.append(header,stage,footer);sceneList.append(node);
+    const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let active=false,running=false,disposed=false,current=0;
+    const updateProgress=k=>{count.textContent='STEP '+String(k+1).padStart(2,'0')+' / '+String(scene.images.length).padStart(2,'0');dots.forEach((d,j)=>d.classList.toggle('active',j===k));};
+    async function loadFirst(){try{const first=await loadImage(scene.images[0]);base.src=first.src;stage.style.aspectRatio=first.naturalWidth+' / '+first.naturalHeight;stage.classList.add('loaded');}catch(e){loading.textContent='Scene image unavailable';logError(e);}}
+    async function animate(){if(running||disposed||reduced||scene.images.length<2)return;running=true;
+      while(active&&!disposed){
+        await wait(1500);if(!active||disposed)break;
+        const nextIndex=(current+1)%scene.images.length;
+        if(nextIndex===0){current=0;base.src=assetURL(scene.images[0]);updateProgress(current);await wait(1500);continue;}
+        let loaded;try{loaded=await loadImage(scene.images[nextIndex]);}catch(e){logError(e);await wait(1800);continue;}
+        if(!active||disposed)break;
+        stage.classList.remove('is-wiping');next.src=loaded.src;next.style.clipPath='inset(0 100% 0 0)';line.style.left='0';line.style.opacity='0';
+        // Flush initial state, then start sweeping the reveal line across the render.
+        await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+        if(!active||disposed)break;
+        next.style.clipPath='';line.style.left='';line.style.opacity='';stage.classList.add('is-wiping');
+        await wait(1130);
+        base.src=loaded.src;current=nextIndex;updateProgress(current);
+        stage.classList.remove('is-wiping');next.style.clipPath='inset(0 100% 0 0)';next.removeAttribute('src');line.style.left='0';line.style.opacity='0';
+      }
+      running=false;
+    }
+    loadFirst().then(()=>{if(reduced&&scene.images.length>1){base.src=assetURL(scene.images[scene.images.length-1]);updateProgress(scene.images.length-1);}});
+    if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{active=entries[0].isIntersecting;if(active)animate();},{rootMargin:'50px 0px',threshold:0.02});observer.observe(node);}
+    else{active=true;animate();}
+  }
+  function showScenes(scenes){sceneList.replaceChildren();
+    if(!scenes.length){const el=document.createElement('div');el.className='data-error';el.innerHTML='No render sequences found yet. Add numbered images to <code>assets/render1/</code>.';sceneList.append(el);return;}
+    scenes.forEach(makeScene);
+  }
+  getRepoTree().then(paths=>{showCategories(collectCategories(paths));showScenes(collectScenes(paths));}).catch(e=>{
+    status.classList.add('error');status.textContent='Unable to load the gallery images: '+e.message;
+    title.textContent='IMAGE LIBRARY UNAVAILABLE';tracks.forEach(x=>x.replaceChildren());sceneList.innerHTML='<div class="data-error">Unable to load scene renders. Please refresh the page or check the repository connection.</div>';
+    logError(e);
+  });
+})();
+</script>
 </body>
 </html>
