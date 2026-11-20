@@ -43,9 +43,95 @@ async function imagesOf(path){const entries=await directory(path);return entries
 function el(tag,className,text){const n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=text;return n;}
 function showError(parent,error){parent.replaceChildren(el('div','error',String(error?.message||error)));console.error(error);}
 function trainCard(file){const item=el('div','train-card');const img=document.createElement('img');img.src=file.url;img.alt='';img.loading='lazy';img.decoding='async';item.append(img);return item;}
-function buildTrain(target,assets){target.replaceChildren();if(!assets.length)return;const cardWidth=180;const repeat=Math.max(2,Math.ceil(1500/(assets.length*cardWidth)));const expanded=Array.from({length:repeat},()=>assets).flat();for(let copy=0;copy<2;copy++){const set=el('div','train-set');for(const file of expanded)set.append(trainCard(file));target.append(set);}target.style.animationDuration=SETTINGS.trainSpeedSeconds+'s';}
-async function initTrains(){const tabs=document.getElementById('tabs');const a=document.getElementById('train-1');const b=document.getElementById('train-2');try{const dirs=(await directory(SETTINGS.categoryRoot)).filter(f=>f.type==='dir').sort((a,b)=>natural(a.name,b.name));if(!dirs.length)throw Error('No folders in assets/categories');let selection=0;async function select(folder){const token=++selection;const buttons=[...tabs.querySelectorAll('button')];buttons.forEach(btn=>{const active=btn.dataset.folder===folder;btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active));});try{const imgs=await imagesOf(SETTINGS.categoryRoot+'/'+folder);if(token!==selection)return;const first=imgs.filter((_,i)=>i%2===0),second=imgs.filter((_,i)=>i%2!==0);buildTrain(a,first.length?first:imgs);buildTrain(b,second.length?second:imgs);}catch(e){if(token===selection)showError(a,e);}}
-for(const f of dirs){const btn=el('button','tab',label(f.name));btn.type='button';btn.dataset.folder=f.name;btn.addEventListener('click',()=>select(f.name));tabs.append(btn);}await select(dirs[0].name);}catch(e){showError(tabs,e);}}
+// Keep every category at the SAME visual speed (pixels/second).
+// The speed of Flowering Plants with the original trainSpeedSeconds is our baseline.
+let referenceExpandedCounts=[64,64];
+function expandedCardCount(count){
+  if(!count)return 0;
+  return count*Math.max(2,Math.ceil(1500/(count*180)));
+}
+function applyTrainSpeed(target){
+  const set=target.querySelector('.train-set');
+  const card=target.querySelector('.train-card');
+  if(!set||!card)return;
+  const gap=parseFloat(getComputedStyle(target).columnGap)||14;
+  const step=card.getBoundingClientRect().width+gap;
+  const referenceCards=(referenceExpandedCounts[0]+referenceExpandedCounts[1])/2;
+  const floweringPixelsPerSecond=referenceCards*step/SETTINGS.trainSpeedSeconds;
+  // One seamless marquee cycle travels exactly the width of one set plus its gap.
+  const travelDistance=set.getBoundingClientRect().width+gap;
+  target.style.animationDuration=(travelDistance/floweringPixelsPerSecond)+'s';
+}
+function buildTrain(target,assets){
+  target.replaceChildren();
+  if(!assets.length)return;
+  const repeat=Math.max(2,Math.ceil(1500/(assets.length*180)));
+  const expanded=Array.from({length:repeat},()=>assets).flat();
+  for(let copy=0;copy<2;copy++){
+    const set=el('div','train-set');
+    for(const file of expanded)set.append(trainCard(file));
+    target.append(set);
+  }
+  applyTrainSpeed(target);
+}
+async function initTrains(){
+  const tabs=document.getElementById('tabs');
+  const a=document.getElementById('train-1');
+  const b=document.getElementById('train-2');
+  try{
+    const dirs=(await directory(SETTINGS.categoryRoot))
+      .filter(f=>f.type==='dir').sort((a,b)=>natural(a.name,b.name));
+    if(!dirs.length)throw Error('No folders in assets/categories');
+
+    // Determine the exact original Flowering Plants speed before rendering any category.
+    const flowering=dirs.find(f=>/flower/i.test(f.name));
+    if(flowering){
+      try{
+        const flowers=await imagesOf(SETTINGS.categoryRoot+'/'+flowering.name);
+        const firstCount=flowers.filter((_,i)=>i%2===0).length;
+        const secondCount=flowers.filter((_,i)=>i%2!==0).length;
+        referenceExpandedCounts=[
+          expandedCardCount(firstCount||flowers.length),
+          expandedCardCount(secondCount||flowers.length)
+        ];
+      }catch(err){console.warn('Flowering speed reference unavailable; using fallback.',err);}
+    }
+
+    let selection=0;
+    async function select(folder){
+      const token=++selection;
+      const buttons=[...tabs.querySelectorAll('button')];
+      buttons.forEach(btn=>{
+        const active=btn.dataset.folder===folder;
+        btn.classList.toggle('active',active);
+        btn.setAttribute('aria-pressed',String(active));
+      });
+      try{
+        const imgs=await imagesOf(SETTINGS.categoryRoot+'/'+folder);
+        if(token!==selection)return;
+        const first=imgs.filter((_,i)=>i%2===0);
+        const second=imgs.filter((_,i)=>i%2!==0);
+        buildTrain(a,first.length?first:imgs);
+        buildTrain(b,second.length?second:imgs);
+      }catch(e){if(token===selection)showError(a,e);}
+    }
+    for(const f of dirs){
+      const btn=el('button','tab',label(f.name));
+      btn.type='button';
+      btn.dataset.folder=f.name;
+      btn.addEventListener('click',()=>select(f.name));
+      tabs.append(btn);
+    }
+    await select(dirs[0].name);
+
+    // Responsive card sizes change the distance; recalculate after window resize.
+    let resizeHandle;
+    window.addEventListener('resize',()=>{
+      clearTimeout(resizeHandle);
+      resizeHandle=setTimeout(()=>{applyTrainSpeed(a);applyTrainSpeed(b);},120);
+    });
+  }catch(e){showError(tabs,e);}
+}
 
 // Preload every frame and wait for decoding BEFORE the slideshow starts.
 // This prevents frames 2, 3, 4, etc. from being skipped while downloading.
