@@ -9,6 +9,157 @@
 <style>
 :root{--bg:#080d0a;--panel:#111a13;--line:#293e2a;--text:#edf3e9;--muted:#a6b8a5;--accent:#c6fa67}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(ellipse at 75% -5%,#273d1a66,transparent 60%),var(--bg);font:15px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif;overflow-x:hidden}h1,h2,h3,p{margin:0}a{color:inherit}button{font:inherit;cursor:pointer}.wrap{width:min(1220px,calc(100% - 42px));margin:auto}.intro{padding:90px 0 65px;border-bottom:1px solid #243526}.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:20px;color:var(--accent);font-size:11px;letter-spacing:.2em;font-weight:800;text-transform:uppercase}.eyebrow:before{content:'';width:26px;height:1px;background:var(--accent)}h1{font-size:clamp(46px,7vw,88px);font-weight:850;line-height:1.03;letter-spacing:-.065em;max-width:1000px}h1 em,h2 em{color:var(--accent);font-style:normal}.lead{font-size:clamp(15px,1.8vw,18px);line-height:1.9;max-width:880px;margin-top:23px;color:var(--muted)}.stats{display:flex;flex-wrap:wrap;gap:30px;margin-top:44px}.stat{min-width:155px;padding-left:22px;border-left:1px solid #48673c}.stat:first-child{padding-left:0;border-left:none}.stat strong{display:block;font-size:32px;letter-spacing:-.05em;line-height:1.2}.stat span{font-size:11px;letter-spacing:.13em;color:#a1b19b;text-transform:uppercase;font-weight:700}.section{padding:75px 0}.heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:31px}.heading h2{font-size:clamp(34px,4.6vw,56px);letter-spacing:-.058em;line-height:1.09}.heading p{max-width:450px;color:var(--muted);line-height:1.8}.tabs{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0 22px}.tab{border:1px solid #344c34;background:#142016;color:#e3eee0;border-radius:99px;padding:10px 17px;transition:background .2s,border-color .2s}.tab:hover{border-color:var(--accent)}.tab.active{background:var(--accent);color:#111b0d;border-color:var(--accent);font-weight:800}.train-shell{display:grid;gap:15px}.train-row{border:1px solid var(--line);border-radius:20px;background:linear-gradient(110deg,#0f1811,#162218,#0f1710);overflow:hidden;position:relative;padding:15px 0}.train-row:before,.train-row:after{content:'';position:absolute;top:0;bottom:0;width:65px;z-index:2;pointer-events:none}.train-row:before{left:0;background:linear-gradient(90deg,#0c140e,transparent)}.train-row:after{right:0;background:linear-gradient(270deg,#0c140e,transparent)}.track{display:flex;align-items:center;gap:14px;width:max-content;will-change:transform;animation:marquee-left 28s linear infinite}.track.reverse{animation-name:marquee-right}.train-set{display:flex;gap:14px;flex:none}.train-card{flex:none;width:162px;height:162px;background:#1a281d;border:1px solid #314a32;border-radius:16px;overflow:hidden}.train-card img{width:100%;height:100%;object-fit:contain;display:block}/* Intentionally keep moving during hover */@keyframes marquee-left{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}@keyframes marquee-right{from{transform:translateX(calc(-50% - 7px))}to{transform:translateX(0)}}.section-soft{background:linear-gradient(180deg,#0b120d,#101910 60%,#080d0a)}.renders{display:grid;gap:35px}.render-card{overflow:hidden;border:1px solid #354c31;border-radius:22px;background:var(--panel);box-shadow:0 16px 44px #0005}.render-head{padding:18px 23px;display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #2c3d2a}.render-head h3{color:var(--accent);font-size:17px;font-weight:750;text-transform:uppercase;letter-spacing:.07em}.render-head span{color:#819681;font-size:11px;letter-spacing:.13em}.stage{aspect-ratio:2/1;position:relative;overflow:hidden;background:#0a0e0b}.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;user-select:none;display:block}.stage .overlay{opacity:0;clip-path:inset(0 0 0 100%);z-index:2}.scan-line{position:absolute;top:0;bottom:0;left:100%;width:3px;z-index:3;opacity:0;background:linear-gradient(180deg,transparent,#fff5cb 25%,var(--accent) 50%,#fff5cb 75%,transparent);box-shadow:0 0 12px var(--accent),0 0 29px #c6fa6766;pointer-events:none}.scan-line:after{content:'';position:absolute;top:0;bottom:0;right:0;width:30px;background:linear-gradient(90deg,transparent,#c6fa6745);filter:blur(9px)}.error{padding:24px;background:#211b14;color:#e3bc81;border:1px solid #846336;border-radius:14px;font-size:13px;line-height:1.7}.small-status{margin:10px 0;color:#7d9581;font-size:12px}.loading{padding:40px 20px;color:#95b28e;text-align:center}.foot{margin:0 auto;border-top:1px solid #263a28;padding:20px 0 60px;font-size:12px;color:#87a185}.foot a{text-decoration:none;color:var(--accent)}@media(max-width:860px){.heading{display:block}.heading p{margin-top:16px}.train-card{width:135px;height:135px}.intro{padding:60px 0 45px}}@media(max-width:540px){.wrap{width:min(1220px,calc(100% - 24px))}.section{padding:50px 0}.train-card{width:112px;height:112px;border-radius:13px}.train-row{padding:10px 0;border-radius:15px}.tabs{gap:7px}.tab{padding:8px 12px;font-size:12px}.render-head{padding:12px 15px}.render-head h3{font-size:13px}.render-head span{font-size:9px}.stat{min-width:0}.stats{gap:17px}.stat strong{font-size:25px}}
+
+
+/* ==============================================
+   SURFACE PENCIL | Animated WebP feature showcase
+   Direct local relative URLs; no GitHub API calls.
+   ============================================== */
+.addon-showcase{
+  position:relative;
+  padding-top:86px;
+  padding-bottom:110px;
+  border-top:1px solid #273d29;
+  background:
+    radial-gradient(circle at 10% 7%,rgba(140,202,73,.09),transparent 32%),
+    linear-gradient(180deg,#0a110c 0%,#0d160e 45%,#080d0a 100%);
+}
+.addon-showcase .addon-intro{margin-bottom:50px}
+.addon-showcase .addon-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--accent);font-size:11px;letter-spacing:.2em;
+  font-weight:800;text-transform:uppercase;margin-bottom:17px;
+}
+.addon-showcase .addon-eyebrow:before{
+  content:'';display:block;width:28px;height:1px;background:var(--accent);
+}
+.addon-showcase .addon-title{
+  font-size:clamp(38px,5.2vw,67px);
+  line-height:1.08;letter-spacing:-.055em;margin:0 0 18px;
+}
+.addon-showcase .addon-title em{font-style:normal;color:var(--accent)}
+.addon-showcase .addon-summary{
+  color:var(--muted);max-width:810px;
+  font-size:clamp(15px,1.7vw,18px);line-height:1.85;
+}
+.feature-list{display:grid;gap:78px}
+.feature-row{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);
+  align-items:center;column-gap:clamp(30px,4.4vw,74px);
+}
+.feature-row .feature-copy{grid-column:1;grid-row:1}
+.feature-row .feature-media{grid-column:2;grid-row:1}
+.feature-row.media-left .feature-copy{grid-column:2}
+.feature-row.media-left .feature-media{grid-column:1}
+.feature-kicker{
+  display:flex;align-items:center;gap:13px;margin-bottom:20px;
+  color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.feature-kicker::after{content:'';height:1px;flex:1;max-width:86px;background:#405d36}
+.feature-copy h3{
+  font-size:clamp(29px,3vw,43px);letter-spacing:-.045em;
+  line-height:1.12;font-weight:790;margin:0 0 20px;
+}
+.feature-copy p{font-size:16px;line-height:1.86;color:#b0c0ac;max-width:540px;margin:0}
+.feature-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
+.feature-tags span{
+  display:inline-flex;align-items:center;padding:7px 12px;
+  background:#18271a;border:1px solid #385438;border-radius:100px;
+  color:#cde7bc;font-size:11px;letter-spacing:.06em;
+  font-weight:750;text-transform:uppercase;
+}
+.feature-media{
+  position:relative;border-radius:22px;border:1px solid #395135;
+  overflow:hidden;background:#101812;box-shadow:0 26px 65px #0008,0 0 0 1px #a6df3210;
+  isolation:isolate;
+}
+.feature-media::before{
+  content:'';position:absolute;inset:0;border-radius:inherit;
+  box-shadow:inset 0 0 45px #0005;z-index:1;pointer-events:none;
+}
+.feature-media img{
+  display:block;width:100%;height:auto;aspect-ratio:2/1;
+  object-fit:contain;object-position:center;
+  background:radial-gradient(circle at 50% 50%,#1c2a1d,#0c130e 80%);
+}
+.feature-error{
+  display:none;position:absolute;inset:0;z-index:3;
+  align-items:center;justify-content:center;text-align:center;
+  padding:24px;color:#edc396;background:#211a13;
+  font-size:14px;line-height:1.8;
+}
+.feature-media.is-missing .feature-error{display:flex}
+@media(max-width:860px){
+  .addon-showcase{padding-top:65px;padding-bottom:80px}
+  .feature-list{gap:54px}
+  .feature-row{column-gap:24px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .feature-copy h3{font-size:clamp(25px,3.8vw,34px)}
+  .feature-copy p{font-size:14px;line-height:1.75}
+}
+@media(max-width:690px){
+  .addon-showcase{padding-top:52px;padding-bottom:65px}
+  .addon-showcase .addon-intro{margin-bottom:36px}
+  .feature-list{gap:48px}
+  .feature-row,.feature-row.media-left{display:flex;flex-direction:column;align-items:stretch;gap:22px}
+  .feature-row .feature-media,.feature-row.media-left .feature-media{order:0}
+  .feature-row .feature-copy,.feature-row.media-left .feature-copy{order:1}
+  .feature-copy h3{font-size:31px;margin-bottom:12px}
+  .feature-kicker{margin-bottom:10px}
+  .feature-tags{margin-top:15px}
+  .feature-media{border-radius:16px}
+}
+
+
+/* ==============================================
+   COLLECTION HIGHLIGHT | video5.webp
+   The file is loaded directly from assets/video.
+   ============================================== */
+.vegetation-showcase{
+  position:relative;
+  padding:18px 0 85px;
+  background:linear-gradient(180deg,#080d0a 0%,#0b130d 100%);
+}
+.vegetation-showcase .vegetation-intro{max-width:960px;margin-bottom:26px}
+.vegetation-showcase .vegetation-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--accent);font-size:11px;letter-spacing:.2em;
+  font-weight:800;text-transform:uppercase;margin-bottom:15px;
+}
+.vegetation-showcase .vegetation-eyebrow::before{
+  content:'';display:block;width:28px;height:1px;background:var(--accent);
+}
+.vegetation-showcase h2{
+  font-size:clamp(32px,4.6vw,55px);font-weight:800;
+  line-height:1.08;letter-spacing:-.055em;margin:0 0 14px;
+}
+.vegetation-showcase h2 em{color:var(--accent);font-style:normal}
+.vegetation-showcase .vegetation-copy{
+  max-width:900px;color:var(--muted);font-size:clamp(15px,1.65vw,18px);
+  line-height:1.85;
+}
+.collection-preview{
+  position:relative;overflow:hidden;isolation:isolate;
+  width:100%;aspect-ratio:2/1;
+  border-radius:22px;border:1px solid #395135;
+  background:radial-gradient(circle at center,#18271a,#0c130e);
+  box-shadow:0 25px 62px #0007,0 0 0 1px #a6df3210;
+}
+.collection-preview img{
+  display:block;width:100%;height:100%;object-fit:contain;
+  object-position:center;aspect-ratio:2/1;
+}
+.collection-preview::after{
+  content:'';position:absolute;inset:0;
+  box-shadow:inset 0 0 36px #0003;pointer-events:none;
+}
+.collection-preview.is-missing .feature-error{display:flex}
+@media(max-width:690px){
+  .vegetation-showcase{padding:2px 0 57px}
+  .vegetation-showcase .vegetation-intro{margin-bottom:20px}
+  .collection-preview{border-radius:16px}
+}
+
 </style>
 </head>
 <body>
@@ -24,10 +175,119 @@
 <div id="tabs" class="tabs"></div>
 <div class="train-shell"><div class="train-row"><div class="track" id="train-1"></div></div><div class="train-row"><div class="track reverse" id="train-2"></div></div></div>
 </div></section>
+
+<section class="vegetation-showcase" id="vegetation-library-preview" aria-labelledby="vegetation-title">
+  <div class="wrap">
+    <div class="vegetation-intro">
+      <div class="vegetation-eyebrow">GROUND COVER LIBRARY · ANIMATED PREVIEW</div>
+      <h2 id="vegetation-title">Nature in every detail.<br><em>Ready for your scene.</em></h2>
+      <p class="vegetation-copy">Explore a wide variety of ground-cover vegetation for different landscapes and climates. Translucency adds natural depth to the foliage, while every grass asset includes wind animation with just two Geometry Nodes controls.</p>
+    </div>
+    <div class="collection-preview">
+      <img src="assets/video/video5.webp"
+           alt="Ground Cover Kit grass and vegetation asset collection with animated wind preview."
+           loading="lazy" decoding="async"
+           onerror="this.parentElement.classList.add('is-missing')">
+      <div class="feature-error" role="status">Preview unavailable.<br>Check assets/video/video5.webp</div>
+    </div>
+  </div>
+</section>
 <section class="section section-soft" id="render-section"><div class="wrap">
 <div class="heading"><h2>Layer by layer.<br><em>Watch it grow.</em></h2><p>Discover how individual ground-cover elements come together to build a finished natural environment.</p></div>
 <div class="renders" id="render-list"><div class="loading">Loading render collections…</div></div>
 </div></section>
+
+<section class="addon-showcase" id="surface-pencil-features">
+  <div class="wrap">
+    <div class="addon-intro">
+      <div class="addon-eyebrow">INCLUDED BLENDER ADD-ON · SURFACE PENCIL</div>
+      <h2 class="addon-title">Scatter with precision.<br><em>Create without limits.</em></h2>
+      <p class="addon-summary">Ground Cover Kit includes Surface Pencil, a flexible scattering tool for Blender. Draw where assets belong, refine their distribution, create natural variation, and keep complex scenes more manageable with camera-facing planes.</p>
+    </div>
+    <div class="feature-list">
+      <article class="feature-row" aria-labelledby="feature-title-1">
+        <div class="feature-copy">
+          <div class="feature-kicker">FEATURE 01 / 05</div>
+          <h3 id="feature-title-1">Four ways to scatter.</h3>
+          <p>Outline an area to fill a selected region, trace a path for linear placement, paint coverage with adjustable brush radius, or scatter across an entire mesh. Choose the method that fits your scene.</p>
+          <div class="feature-tags"><span>Area</span><span>Path</span><span>Brush</span><span>Whole Mesh</span></div>
+        </div>
+        <div class="feature-media">
+          <img src="assets/video/video1.webp"
+               alt="Surface Pencil demonstration: Four ways to scatter."
+               loading="lazy" decoding="async"
+               onerror="this.parentElement.classList.add('is-missing')">
+          <div class="feature-error" role="status">Preview unavailable.<br>Check assets/video/video1.webp</div>
+        </div>
+      </article>
+
+      <article class="feature-row media-left" aria-labelledby="feature-title-2">
+        <div class="feature-copy">
+          <div class="feature-kicker">FEATURE 02 / 05</div>
+          <h3 id="feature-title-2">Fine-tune every edge.</h3>
+          <p>Make area scatters denser near boundaries, reduce coverage around the edges, or shorten instances toward the border. Additional controls let you shape the distribution with greater precision.</p>
+          <div class="feature-tags"><span>More at edges</span><span>Less at edges</span><span>Shorter edges</span></div>
+        </div>
+        <div class="feature-media">
+          <img src="assets/video/video2.webp"
+               alt="Surface Pencil demonstration: Fine-tune every edge."
+               loading="lazy" decoding="async"
+               onerror="this.parentElement.classList.add('is-missing')">
+          <div class="feature-error" role="status">Preview unavailable.<br>Check assets/video/video2.webp</div>
+        </div>
+      </article>
+
+      <article class="feature-row" aria-labelledby="feature-title-3">
+        <div class="feature-copy">
+          <div class="feature-kicker">FEATURE 03 / 05</div>
+          <h3 id="feature-title-3">Natural variation, full control.</h3>
+          <p>Add random rotation and random scale to avoid obvious repetition. Then adjust the overall scale and height above the surface to dial in the exact appearance of your scatter.</p>
+          <div class="feature-tags"><span>Random rotation</span><span>Random scale</span><span>Global scale</span><span>Surface offset</span></div>
+        </div>
+        <div class="feature-media">
+          <img src="assets/video/video3.webp"
+               alt="Surface Pencil demonstration: Natural variation, full control."
+               loading="lazy" decoding="async"
+               onerror="this.parentElement.classList.add('is-missing')">
+          <div class="feature-error" role="status">Preview unavailable.<br>Check assets/video/video3.webp</div>
+        </div>
+      </article>
+
+      <article class="feature-row media-left" aria-labelledby="feature-title-4">
+        <div class="feature-copy">
+          <div class="feature-kicker">FEATURE 04 / 05</div>
+          <h3 id="feature-title-4">Big scenes. Lighter geometry.</h3>
+          <p>Use a simple plane with a tree texture and an alpha channel instead of a fully modeled tree. Enable Face Camera to keep each scattered plane oriented toward the camera, creating convincing foliage silhouettes with far less geometry—particularly useful for dense backgrounds.</p>
+          <div class="feature-tags"><span>Face Camera</span><span>Alpha-textured planes</span><span>Geometry-saving</span></div>
+        </div>
+        <div class="feature-media">
+          <img src="assets/video/video4.webp"
+               alt="Surface Pencil demonstration: Big scenes. Lighter geometry."
+               loading="lazy" decoding="async"
+               onerror="this.parentElement.classList.add('is-missing')">
+          <div class="feature-error" role="status">Preview unavailable.<br>Check assets/video/video4.webp</div>
+        </div>
+      </article>
+
+      <article class="feature-row" aria-labelledby="feature-title-5">
+        <div class="feature-copy">
+          <div class="feature-kicker">FEATURE 05 / 05</div>
+          <h3 id="feature-title-5">Smart elevation. Lighter viewport.</h3>
+          <p>Fine-tune how assets are scattered across different elevations, then switch to a lightweight box-style display to keep the Blender viewport responsive without drawing every detailed mesh at once.</p>
+          <div class="feature-tags"><span>Elevation control</span><span>Box display</span><span>Viewport performance</span></div>
+        </div>
+        <div class="feature-media">
+          <img src="assets/video/video6.webp"
+               alt="Surface Pencil demonstration: Elevation-based scatter controls and box-style viewport display."
+               loading="lazy" decoding="async"
+               onerror="this.parentElement.classList.add('is-missing')">
+          <div class="feature-error" role="status">Preview unavailable.<br>Check assets/video/video6.webp</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 </main><footer class="foot"><div class="wrap">Ground Cover Kit · Surface Pencil · Arsha Flora</div></footer>
 <script>
 'use strict';
