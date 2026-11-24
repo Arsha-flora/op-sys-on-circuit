@@ -32,10 +32,28 @@
 <script>
 'use strict';
 const SETTINGS={owner:'Arsha-flora',repo:'op-sys-on-circuit',branch:'main',categoryRoot:'assets/categories',renderFolders:['assets/render1','assets/render2'],stepHold:1000,finalHold:3000,swipeDuration:700,trainSpeedSeconds:150};
+// Asset list is generated locally into assets/gallery-manifest.json.
+// No GitHub API requests: gallery remains functional even when GitHub API returns 403.
 const directoryCache=new Map();
-const rootApi=`https://api.github.com/repos/${SETTINGS.owner}/${SETTINGS.repo}/contents/`;
+const MANIFEST_URL='assets/gallery-manifest.json';
+let manifestPromise;
 function pathEncoded(path){return path.split('/').map(encodeURIComponent).join('/');}
-async function directory(path){if(directoryCache.has(path))return directoryCache.get(path);const res=await fetch(`${rootApi}${pathEncoded(path)}?ref=${encodeURIComponent(SETTINGS.branch)}&per_page=1000`,{cache:'no-store'});if(!res.ok)throw Error(`${path}: GitHub API returned ${res.status}${res.status===403?' (possibly rate-limited)':''}`);const data=await res.json();if(!Array.isArray(data))throw Error(`Not a folder: ${path}`);directoryCache.set(path,data);return data;}
+async function directory(path){
+  if(directoryCache.has(path))return directoryCache.get(path);
+  if(!manifestPromise){
+    manifestPromise=fetch(MANIFEST_URL,{cache:'no-cache'}).then(async res=>{
+      if(!res.ok)throw Error(`Missing ${MANIFEST_URL} (HTTP ${res.status}). Run build_gallery_manifest.py in your repository folder and push the generated JSON file.`);
+      const value=await res.json();
+      if(!value||typeof value!=='object'||!value.folders)throw Error('Invalid assets/gallery-manifest.json; rebuild it with build_gallery_manifest.py.');
+      return value;
+    });
+  }
+  const manifest=await manifestPromise;
+  const data=manifest.folders[path];
+  if(!Array.isArray(data))throw Error(`Folder ${path} is missing from gallery manifest. Run build_gallery_manifest.py and push the updated JSON.`);
+  directoryCache.set(path,data);
+  return data;
+}
 const natural=(a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:'base'});
 function label(folder){return folder.replace(/[_-]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase());}
 function isImg(name){return /\.(webp|png|jpg|jpeg|avif)$/i.test(name);}

@@ -1,0 +1,1397 @@
+{
+  "version": 1,
+  "folders": {
+    "assets/categories": [
+      {
+        "name": "Flowering plants",
+        "type": "dir"
+      },
+      {
+        "name": "Grass and Bush",
+        "type": "dir"
+      },
+      {
+        "name": "Large Bush",
+        "type": "dir"
+      },
+      {
+        "name": "Plants, wood, and dry leaves",
+        "type": "dir"
+      },
+      {
+        "name": "soil",
+        "type": "dir"
+      },
+      {
+        "name": "Stone",
+        "type": "dir"
+      }
+    ],
+    "assets/categories/Flowering plants": [
+      {
+        "name": "Dandelion plant1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant1.webp"
+      },
+      {
+        "name": "Dandelion plant2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant2.webp"
+      },
+      {
+        "name": "Dandelion plant3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant3.webp"
+      },
+      {
+        "name": "Dandelion plant4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant4.webp"
+      },
+      {
+        "name": "Dandelion plant5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant5.webp"
+      },
+      {
+        "name": "Dandelion plant6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant6.webp"
+      },
+      {
+        "name": "Dandelion plant7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant7.webp"
+      },
+      {
+        "name": "Dandelion plant8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant8.webp"
+      },
+      {
+        "name": "Dandelion plant9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant9.webp"
+      },
+      {
+        "name": "Dandelion plant10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant10.webp"
+      },
+      {
+        "name": "Dandelion plant.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Dandelion%20plant.webp"
+      },
+      {
+        "name": "Flowering shrub1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub1.webp"
+      },
+      {
+        "name": "Flowering shrub2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub2.webp"
+      },
+      {
+        "name": "Flowering shrub3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub3.webp"
+      },
+      {
+        "name": "Flowering shrub4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub4.webp"
+      },
+      {
+        "name": "Flowering shrub5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub5.webp"
+      },
+      {
+        "name": "Flowering shrub6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub6.webp"
+      },
+      {
+        "name": "Flowering shrub7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub7.webp"
+      },
+      {
+        "name": "Flowering shrub8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub8.webp"
+      },
+      {
+        "name": "Flowering shrub9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub9.webp"
+      },
+      {
+        "name": "Flowering shrub10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub10.webp"
+      },
+      {
+        "name": "Flowering shrub11.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub11.webp"
+      },
+      {
+        "name": "Flowering shrub12.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub12.webp"
+      },
+      {
+        "name": "Flowering shrub13.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub13.webp"
+      },
+      {
+        "name": "Flowering shrub14.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub14.webp"
+      },
+      {
+        "name": "Flowering shrub15.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub15.webp"
+      },
+      {
+        "name": "Flowering shrub16.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub16.webp"
+      },
+      {
+        "name": "Flowering shrub17.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub17.webp"
+      },
+      {
+        "name": "Flowering shrub18.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub18.webp"
+      },
+      {
+        "name": "Flowering shrub19.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub19.webp"
+      },
+      {
+        "name": "Flowering shrub20.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub20.webp"
+      },
+      {
+        "name": "Flowering shrub21.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub21.webp"
+      },
+      {
+        "name": "Flowering shrub22.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub22.webp"
+      },
+      {
+        "name": "Flowering shrub23.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub23.webp"
+      },
+      {
+        "name": "Flowering shrub24.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub24.webp"
+      },
+      {
+        "name": "Flowering shrub25.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub25.webp"
+      },
+      {
+        "name": "Flowering shrub26.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub26.webp"
+      },
+      {
+        "name": "Flowering shrub27.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub27.webp"
+      },
+      {
+        "name": "Flowering shrub28.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub28.webp"
+      },
+      {
+        "name": "Flowering shrub29.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub29.webp"
+      },
+      {
+        "name": "Flowering shrub30.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub30.webp"
+      },
+      {
+        "name": "Flowering shrub31.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub31.webp"
+      },
+      {
+        "name": "Flowering shrub32.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub32.webp"
+      },
+      {
+        "name": "Flowering shrub33.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub33.webp"
+      },
+      {
+        "name": "Flowering shrub34.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub34.webp"
+      },
+      {
+        "name": "Flowering shrub35.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub35.webp"
+      },
+      {
+        "name": "Flowering shrub36.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub36.webp"
+      },
+      {
+        "name": "Flowering shrub37.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub37.webp"
+      },
+      {
+        "name": "Flowering shrub38.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub38.webp"
+      },
+      {
+        "name": "Flowering shrub39.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub39.webp"
+      },
+      {
+        "name": "Flowering shrub40.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub40.webp"
+      },
+      {
+        "name": "Flowering shrub41.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub41.webp"
+      },
+      {
+        "name": "Flowering shrub42.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub42.webp"
+      },
+      {
+        "name": "Flowering shrub43.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub43.webp"
+      },
+      {
+        "name": "Flowering shrub44.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub44.webp"
+      },
+      {
+        "name": "Flowering shrub45.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub45.webp"
+      },
+      {
+        "name": "Flowering shrub46.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub46.webp"
+      },
+      {
+        "name": "Flowering shrub47.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub47.webp"
+      },
+      {
+        "name": "Flowering shrub48.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub48.webp"
+      },
+      {
+        "name": "Flowering shrub49.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub49.webp"
+      },
+      {
+        "name": "Flowering shrub50.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub50.webp"
+      },
+      {
+        "name": "Flowering shrub51.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub51.webp"
+      },
+      {
+        "name": "Flowering shrub52.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub52.webp"
+      },
+      {
+        "name": "Flowering shrub53.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub53.webp"
+      },
+      {
+        "name": "Flowering shrub54.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub54.webp"
+      },
+      {
+        "name": "Flowering shrub55.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub55.webp"
+      },
+      {
+        "name": "Flowering shrub56.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub56.webp"
+      },
+      {
+        "name": "Flowering shrub57.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub57.webp"
+      },
+      {
+        "name": "Flowering shrub58.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub58.webp"
+      },
+      {
+        "name": "Flowering shrub59.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub59.webp"
+      },
+      {
+        "name": "Flowering shrub60.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub60.webp"
+      },
+      {
+        "name": "Flowering shrub61.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub61.webp"
+      },
+      {
+        "name": "Flowering shrub62.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub62.webp"
+      },
+      {
+        "name": "Flowering shrub63.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub63.webp"
+      },
+      {
+        "name": "Flowering shrub.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Flowering%20shrub.webp"
+      },
+      {
+        "name": "Pampas grass1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass1.webp"
+      },
+      {
+        "name": "Pampas grass2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass2.webp"
+      },
+      {
+        "name": "Pampas grass3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass3.webp"
+      },
+      {
+        "name": "Pampas grass4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass4.webp"
+      },
+      {
+        "name": "Pampas grass5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass5.webp"
+      },
+      {
+        "name": "Pampas grass6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass6.webp"
+      },
+      {
+        "name": "Pampas grass7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass7.webp"
+      },
+      {
+        "name": "Pampas grass8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass8.webp"
+      },
+      {
+        "name": "Pampas grass9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass9.webp"
+      },
+      {
+        "name": "Pampas grass10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass10.webp"
+      },
+      {
+        "name": "Pampas grass11.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass11.webp"
+      },
+      {
+        "name": "Pampas grass12.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass12.webp"
+      },
+      {
+        "name": "Pampas grass13.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass13.webp"
+      },
+      {
+        "name": "Pampas grass14.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass14.webp"
+      },
+      {
+        "name": "Pampas grass15.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass15.webp"
+      },
+      {
+        "name": "Pampas grass16.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass16.webp"
+      },
+      {
+        "name": "Pampas grass17.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass17.webp"
+      },
+      {
+        "name": "Pampas grass18.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass18.webp"
+      },
+      {
+        "name": "Pampas grass19.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass19.webp"
+      },
+      {
+        "name": "Pampas grass.webp",
+        "type": "file",
+        "download_url": "assets/categories/Flowering%20plants/Pampas%20grass.webp"
+      }
+    ],
+    "assets/categories/Grass and Bush": [
+      {
+        "name": "Bush1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush1.webp"
+      },
+      {
+        "name": "Bush2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush2.webp"
+      },
+      {
+        "name": "Bush3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush3.webp"
+      },
+      {
+        "name": "Bush4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush4.webp"
+      },
+      {
+        "name": "Bush5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush5.webp"
+      },
+      {
+        "name": "Bush6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush6.webp"
+      },
+      {
+        "name": "Bush7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush7.webp"
+      },
+      {
+        "name": "Bush8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush8.webp"
+      },
+      {
+        "name": "Bush9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush9.webp"
+      },
+      {
+        "name": "Bush.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Bush.webp"
+      },
+      {
+        "name": "Grass1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass1.webp"
+      },
+      {
+        "name": "Grass2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass2.webp"
+      },
+      {
+        "name": "Grass3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass3.webp"
+      },
+      {
+        "name": "Grass4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass4.webp"
+      },
+      {
+        "name": "Grass5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass5.webp"
+      },
+      {
+        "name": "Grass6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass6.webp"
+      },
+      {
+        "name": "Grass7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass7.webp"
+      },
+      {
+        "name": "Grass8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass8.webp"
+      },
+      {
+        "name": "Grass9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass9.webp"
+      },
+      {
+        "name": "Grass10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass10.webp"
+      },
+      {
+        "name": "Grass11.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass11.webp"
+      },
+      {
+        "name": "Grass12.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass12.webp"
+      },
+      {
+        "name": "Grass13.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass13.webp"
+      },
+      {
+        "name": "Grass14.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass14.webp"
+      },
+      {
+        "name": "Grass15.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass15.webp"
+      },
+      {
+        "name": "Grass16.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass16.webp"
+      },
+      {
+        "name": "Grass17.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass17.webp"
+      },
+      {
+        "name": "Grass18.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass18.webp"
+      },
+      {
+        "name": "Grass19.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass19.webp"
+      },
+      {
+        "name": "Grass20.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass20.webp"
+      },
+      {
+        "name": "Grass21.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass21.webp"
+      },
+      {
+        "name": "Grass22.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass22.webp"
+      },
+      {
+        "name": "Grass23.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass23.webp"
+      },
+      {
+        "name": "Grass24.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass24.webp"
+      },
+      {
+        "name": "Grass25.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass25.webp"
+      },
+      {
+        "name": "Grass26.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass26.webp"
+      },
+      {
+        "name": "Grass27.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass27.webp"
+      },
+      {
+        "name": "Grass28.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass28.webp"
+      },
+      {
+        "name": "Grass29.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass29.webp"
+      },
+      {
+        "name": "Grass30.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass30.webp"
+      },
+      {
+        "name": "Grass31.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass31.webp"
+      },
+      {
+        "name": "Grass32.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass32.webp"
+      },
+      {
+        "name": "Grass33.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass33.webp"
+      },
+      {
+        "name": "Grass34.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass34.webp"
+      },
+      {
+        "name": "Grass35.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass35.webp"
+      },
+      {
+        "name": "Grass36.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass36.webp"
+      },
+      {
+        "name": "Grass37.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass37.webp"
+      },
+      {
+        "name": "Grass38.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass38.webp"
+      },
+      {
+        "name": "Grass39.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass39.webp"
+      },
+      {
+        "name": "Grass40.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass40.webp"
+      },
+      {
+        "name": "Grass41.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass41.webp"
+      },
+      {
+        "name": "Grass42.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass42.webp"
+      },
+      {
+        "name": "Grass43.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass43.webp"
+      },
+      {
+        "name": "Grass44.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass44.webp"
+      },
+      {
+        "name": "Grass45.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass45.webp"
+      },
+      {
+        "name": "Grass46.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass46.webp"
+      },
+      {
+        "name": "Grass47.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass47.webp"
+      },
+      {
+        "name": "Grass48.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass48.webp"
+      },
+      {
+        "name": "Grass49.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass49.webp"
+      },
+      {
+        "name": "Grass50.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass50.webp"
+      },
+      {
+        "name": "Grass51.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass51.webp"
+      },
+      {
+        "name": "Grass52.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass52.webp"
+      },
+      {
+        "name": "Grass53.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass53.webp"
+      },
+      {
+        "name": "Grass54.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass54.webp"
+      },
+      {
+        "name": "Grass55.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass55.webp"
+      },
+      {
+        "name": "Grass56.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass56.webp"
+      },
+      {
+        "name": "Grass57.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass57.webp"
+      },
+      {
+        "name": "Grass58.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass58.webp"
+      },
+      {
+        "name": "Grass59.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass59.webp"
+      },
+      {
+        "name": "Grass60.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass60.webp"
+      },
+      {
+        "name": "Grass61.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass61.webp"
+      },
+      {
+        "name": "Grass62.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass62.webp"
+      },
+      {
+        "name": "Grass63.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass63.webp"
+      },
+      {
+        "name": "Grass64.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass64.webp"
+      },
+      {
+        "name": "Grass65.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass65.webp"
+      },
+      {
+        "name": "Grass66.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass66.webp"
+      },
+      {
+        "name": "Grass67.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass67.webp"
+      },
+      {
+        "name": "Grass68.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass68.webp"
+      },
+      {
+        "name": "Grass69.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass69.webp"
+      },
+      {
+        "name": "Grass70.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass70.webp"
+      },
+      {
+        "name": "Grass71.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass71.webp"
+      },
+      {
+        "name": "Grass72.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass72.webp"
+      },
+      {
+        "name": "Grass73.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass73.webp"
+      },
+      {
+        "name": "Grass74.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass74.webp"
+      },
+      {
+        "name": "Grass75.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass75.webp"
+      },
+      {
+        "name": "Grass76.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass76.webp"
+      },
+      {
+        "name": "Grass77.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass77.webp"
+      },
+      {
+        "name": "Grass.webp",
+        "type": "file",
+        "download_url": "assets/categories/Grass%20and%20Bush/Grass.webp"
+      }
+    ],
+    "assets/categories/Large Bush": [
+      {
+        "name": "Large Bush1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush1.webp"
+      },
+      {
+        "name": "Large Bush2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush2.webp"
+      },
+      {
+        "name": "Large Bush3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush3.webp"
+      },
+      {
+        "name": "Large Bush4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush4.webp"
+      },
+      {
+        "name": "Large Bush5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush5.webp"
+      },
+      {
+        "name": "Large Bush6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush6.webp"
+      },
+      {
+        "name": "Large Bush7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush7.webp"
+      },
+      {
+        "name": "Large Bush8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush8.webp"
+      },
+      {
+        "name": "Large Bush9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush9.webp"
+      },
+      {
+        "name": "Large Bush10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush10.webp"
+      },
+      {
+        "name": "Large Bush11.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush11.webp"
+      },
+      {
+        "name": "Large Bush.webp",
+        "type": "file",
+        "download_url": "assets/categories/Large%20Bush/Large%20Bush.webp"
+      }
+    ],
+    "assets/categories/Plants, wood, and dry leaves": [
+      {
+        "name": "Dry bush1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush1.webp"
+      },
+      {
+        "name": "Dry bush2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush2.webp"
+      },
+      {
+        "name": "Dry bush3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush3.webp"
+      },
+      {
+        "name": "Dry bush4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush4.webp"
+      },
+      {
+        "name": "Dry bush5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush5.webp"
+      },
+      {
+        "name": "Dry bush6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush6.webp"
+      },
+      {
+        "name": "Dry bush7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush7.webp"
+      },
+      {
+        "name": "Dry bush8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush8.webp"
+      },
+      {
+        "name": "Dry bush9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush9.webp"
+      },
+      {
+        "name": "Dry bush10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush10.webp"
+      },
+      {
+        "name": "Dry bush11.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush11.webp"
+      },
+      {
+        "name": "Dry bush12.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush12.webp"
+      },
+      {
+        "name": "Dry bush13.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush13.webp"
+      },
+      {
+        "name": "Dry bush14.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush14.webp"
+      },
+      {
+        "name": "Dry bush15.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush15.webp"
+      },
+      {
+        "name": "Dry bush16.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush16.webp"
+      },
+      {
+        "name": "Dry bush17.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush17.webp"
+      },
+      {
+        "name": "Dry bush18.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush18.webp"
+      },
+      {
+        "name": "Dry bush19.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush19.webp"
+      },
+      {
+        "name": "Dry bush20.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush20.webp"
+      },
+      {
+        "name": "Dry bush21.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush21.webp"
+      },
+      {
+        "name": "Dry bush22.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush22.webp"
+      },
+      {
+        "name": "Dry bush.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20bush.webp"
+      },
+      {
+        "name": "Dry Leaf1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20Leaf1.webp"
+      },
+      {
+        "name": "Dry Leaf2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20Leaf2.webp"
+      },
+      {
+        "name": "Dry Leaf3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20Leaf3.webp"
+      },
+      {
+        "name": "Dry Leaf4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20Leaf4.webp"
+      },
+      {
+        "name": "Dry Leaf5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20Leaf5.webp"
+      },
+      {
+        "name": "Dry Leaf.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20Leaf.webp"
+      },
+      {
+        "name": "Dry wood1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood1.webp"
+      },
+      {
+        "name": "Dry wood2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood2.webp"
+      },
+      {
+        "name": "Dry wood3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood3.webp"
+      },
+      {
+        "name": "Dry wood4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood4.webp"
+      },
+      {
+        "name": "Dry wood5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood5.webp"
+      },
+      {
+        "name": "Dry wood6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood6.webp"
+      },
+      {
+        "name": "Dry wood7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood7.webp"
+      },
+      {
+        "name": "Dry wood8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood8.webp"
+      },
+      {
+        "name": "Dry wood9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood9.webp"
+      },
+      {
+        "name": "Dry wood10.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood10.webp"
+      },
+      {
+        "name": "Dry wood11.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood11.webp"
+      },
+      {
+        "name": "Dry wood12.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood12.webp"
+      },
+      {
+        "name": "Dry wood13.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood13.webp"
+      },
+      {
+        "name": "Dry wood14.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood14.webp"
+      },
+      {
+        "name": "Dry wood15.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood15.webp"
+      },
+      {
+        "name": "Dry wood16.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood16.webp"
+      },
+      {
+        "name": "Dry wood17.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood17.webp"
+      },
+      {
+        "name": "Dry wood18.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood18.webp"
+      },
+      {
+        "name": "Dry wood.webp",
+        "type": "file",
+        "download_url": "assets/categories/Plants%2C%20wood%2C%20and%20dry%20leaves/Dry%20wood.webp"
+      }
+    ],
+    "assets/categories/soil": [
+      {
+        "name": "soil_001.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_001.webp"
+      },
+      {
+        "name": "soil_002.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_002.webp"
+      },
+      {
+        "name": "soil_003.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_003.webp"
+      },
+      {
+        "name": "soil_004.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_004.webp"
+      },
+      {
+        "name": "soil_005.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_005.webp"
+      },
+      {
+        "name": "soil_006.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_006.webp"
+      },
+      {
+        "name": "soil_007.webp",
+        "type": "file",
+        "download_url": "assets/categories/soil/soil_007.webp"
+      }
+    ],
+    "assets/categories/Stone": [
+      {
+        "name": "Stone1.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone1.webp"
+      },
+      {
+        "name": "Stone2.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone2.webp"
+      },
+      {
+        "name": "Stone3.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone3.webp"
+      },
+      {
+        "name": "Stone4.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone4.webp"
+      },
+      {
+        "name": "Stone5.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone5.webp"
+      },
+      {
+        "name": "Stone6.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone6.webp"
+      },
+      {
+        "name": "Stone7.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone7.webp"
+      },
+      {
+        "name": "Stone8.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone8.webp"
+      },
+      {
+        "name": "Stone9.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone9.webp"
+      },
+      {
+        "name": "Stone.webp",
+        "type": "file",
+        "download_url": "assets/categories/Stone/Stone.webp"
+      }
+    ],
+    "assets/render1": [
+      {
+        "name": "1.webp",
+        "type": "file",
+        "download_url": "assets/render1/1.webp"
+      },
+      {
+        "name": "2.webp",
+        "type": "file",
+        "download_url": "assets/render1/2.webp"
+      },
+      {
+        "name": "3.webp",
+        "type": "file",
+        "download_url": "assets/render1/3.webp"
+      },
+      {
+        "name": "4.webp",
+        "type": "file",
+        "download_url": "assets/render1/4.webp"
+      },
+      {
+        "name": "5.webp",
+        "type": "file",
+        "download_url": "assets/render1/5.webp"
+      },
+      {
+        "name": "6.webp",
+        "type": "file",
+        "download_url": "assets/render1/6.webp"
+      }
+    ],
+    "assets/render2": [
+      {
+        "name": "1.webp",
+        "type": "file",
+        "download_url": "assets/render2/1.webp"
+      },
+      {
+        "name": "2.webp",
+        "type": "file",
+        "download_url": "assets/render2/2.webp"
+      },
+      {
+        "name": "3.webp",
+        "type": "file",
+        "download_url": "assets/render2/3.webp"
+      },
+      {
+        "name": "4.webp",
+        "type": "file",
+        "download_url": "assets/render2/4.webp"
+      }
+    ]
+  }
+}
